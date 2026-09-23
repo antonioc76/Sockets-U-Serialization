@@ -1,11 +1,16 @@
-# storm_software_2026
-Software for our 2026 [STORM](https://storm.soonerrobotics.org/) competition entry.
+Dependencies
 
-# Dependencies
-None yet.
+The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv – which was used to write the Relay Server and example clients – is included here.
 
-# Building
-Can't yet.
+Download libhv: https://github.com/ithewei/libhv
 
-# Running the code
-TODO
+Navigate to your local libhv folder and run
+
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+sudo make install
+
+Using libhv in your node
+
+If you are using cmake, you can follow the example files here in /src for creating a node with a libhv client. 
