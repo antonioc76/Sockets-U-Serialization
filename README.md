@@ -1,12 +1,16 @@
+# Sockets U Serialization (SUS)
+
+An implementation agnostic IPC communications system and specification based on WebSockets and JSON.
+
 # Architecture
 
 The communication protocol is described by the following diagram
 
 ![Architecture.png](images/architecture.png)
 
-The communications specification is based on WebSockets and JSON and is implementation agnostic, but installation instructions for the dependencies `libhv` and `boost` – which were used to write the Relay Server and example clients – are included here.
-
 # Building
+
+Installation instructions for the dependencies `libhv` and `boost` – which were used to write the Relay Server and example clients – are included here.
 
 ## Dependencies
 
