@@ -1,4 +1,4 @@
-# Sockets U Serialization (SUS)
+# Sockets [U](https://en.wikipedia.org/wiki/Union_(set_theory)) Serialization (SUS)
 
 An implementation agnostic IPC communications system and specification based on WebSockets and JSON.
 
