@@ -1,16 +1,72 @@
-Dependencies
+##Dependencies
 
-The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv – which was used to write the Relay Server and example clients – is included here.
+The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv and boost – which were used to write the Relay Server and example clients – is included here.
 
-Download libhv: https://github.com/ithewei/libhv
+1. Download libhv: https://github.com/ithewei/libhv
 
-Navigate to your local libhv folder and run
+2. Install libhv:
 
+```
+cd libhv
 mkdir build && cd build
 cmake ..
 make -j$(nproc)
 sudo make install
+```
 
-Using libhv in your node
+3. Download boost (version >= 1.90): https://www.boost.org/doc/user-guide/getting-started.html#from-source
 
-If you are using cmake, you can follow the example files here in /src for creating a node with a libhv client. 
+```
+git clone https://github.com/boostorg/boost.git -b boost-1.90.0 boost_1_90_0 --depth 1 
+cd boost_1_90_0
+git submodule update --depth 1 --init --recursive
+```
+
+4. Install boost:
+
+```
+cd boost_1_90_0/
+mkdir build && cd build
+cmake ..
+cmake --build .
+cmake --build . --target install
+```
+
+5. Ensure you have G++-13 installed (for C++ 20)
+
+if the major version number of `g++ --version` is 13 or higher, continue to the next section
+
+```
+cd ~
+sudo apt update 
+sudo apt install -y software-properties-common 
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
+sudo apt update 
+
+sudo apt install -y gcc-13 g++-13
+```
+
+6. Build relay server and examples from source
+
+```
+cd Sockets-U-Serialization
+cmake -S ./ws_server -B ./build -DCMAKE_C_COMPILER=gcc-13 -DCMAKE_CXX_COMPILER=g++-13
+cmake --build ./build
+```
+
+##Examples
+
+If you are using C++, you can follow the example files here in /src for creating a node with a libhv client. 
+
+in one thread run
+
+`./build/relay_server`
+
+in another run
+
+`./build/client1`
+
+and another run
+
+`./build/client2`
