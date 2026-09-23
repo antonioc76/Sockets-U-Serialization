@@ -1,4 +1,4 @@
-The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv and boost – which were used to write the Relay Server and example clients – is included here.
+The communications specification is based on WebSockets and json and is implementation agnostic, but installation instructions for the dependencies `libhv` and `boost` – which were used to write the Relay Server and example clients – are included here.
 
 # Building
 
