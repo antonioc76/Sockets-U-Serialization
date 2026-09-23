@@ -10,7 +10,7 @@ The communication protocol is described by the following diagram
 
 # Building
 
-Installation instructions for the dependencies `libhv` and `boost` – which were used to write the Relay Server and example clients – are included here.
+Installation instructions for the dependencies `libhv` – which were used to write the Relay Server and example clients – is included here.
 
 ## Dependencies
 
@@ -24,24 +24,6 @@ mkdir build && cd build
 cmake ..
 make -j$(nproc)
 sudo make install
-```
-
-3. Download boost (version >= 1.90): https://www.boost.org/doc/user-guide/getting-started.html#from-source
-
-```
-git clone https://github.com/boostorg/boost.git -b boost-1.90.0 boost_1_90_0 --depth 1 
-cd boost_1_90_0
-git submodule update --depth 1 --init --recursive
-```
-
-4. Install boost:
-
-```
-cd boost_1_90_0/
-mkdir build && cd build
-cmake ..
-cmake --build .
-cmake --build . --target install
 ```
 
 ## Compiler version
@@ -83,3 +65,7 @@ in another run
 and another run
 
 `./build/client2`
+
+client2 should print the message that it receives from client1
+
+`heard: {"ID":200,"message":"Hello Client2!"}`
