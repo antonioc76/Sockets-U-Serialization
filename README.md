@@ -1,6 +1,8 @@
-# Dependencies
-
 The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv and boost – which were used to write the Relay Server and example clients – is included here.
+
+# Building
+
+## Dependencies
 
 1. Download libhv: https://github.com/ithewei/libhv
 
@@ -32,6 +34,7 @@ cmake --build .
 cmake --build . --target install
 ```
 
+## Compiler version
 5. Ensure you have G++-13 installed (for C++ 20)
 
 if the major version number of `g++ --version` is 13 or higher, continue to the next section
@@ -47,6 +50,7 @@ sudo apt update
 sudo apt install -y gcc-13 g++-13
 ```
 
+## Build project
 6. Build relay server and examples from source
 
 ```
@@ -56,7 +60,6 @@ cmake --build ./build
 ```
 
 # Examples
-
 If you are using C++, you can follow the example files here in /src for creating a node with a libhv client. 
 
 in one thread run
