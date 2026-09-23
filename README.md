@@ -10,9 +10,9 @@ The communication protocol is described by the following diagram
 
 # Building
 
-Installation instructions for the dependencies `libhv` – which were used to write the Relay Server and example clients – is included here.
+Installation instructions for the dependency `libhv` – which was used to write the Relay Server and example clients – is included here.
 
-## Dependencies
+## Dependency
 
 1. Download libhv: https://github.com/ithewei/libhv
 
