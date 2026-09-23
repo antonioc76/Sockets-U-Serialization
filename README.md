@@ -52,7 +52,7 @@ cmake --build ./build
 ```
 
 # Examples
-If you are using C++, you can follow the example files here in /src for creating a node with a libhv client. 
+If you are using C++, you can follow the example files [here](/ws_server/src/) for creating a node with a libhv client. 
 
 in one thread run
 
