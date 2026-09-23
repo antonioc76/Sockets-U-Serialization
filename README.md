@@ -1,4 +1,4 @@
-##Dependencies
+#Dependencies
 
 The communications specification is based on WebSockets and json and is implementation agnostic, but the dependencies for using libhv and boost – which were used to write the Relay Server and example clients – is included here.
 
@@ -55,7 +55,7 @@ cmake -S ./ws_server -B ./build -DCMAKE_C_COMPILER=gcc-13 -DCMAKE_CXX_COMPILER=g
 cmake --build ./build
 ```
 
-##Examples
+#Examples
 
 If you are using C++, you can follow the example files here in /src for creating a node with a libhv client. 
 
