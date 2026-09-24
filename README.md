@@ -1,21 +1,16 @@
 # Sockets [U](https://en.wikipedia.org/wiki/Union_(set_theory)) Serialization (SUS)
-
 An implementation agnostic IPC system and specification based on WebSockets and JSON.
 
 # Architecture
-
 The communication protocol is described by the following diagram
 
 ![Architecture.png](images/architecture.png)
 
 # Running binaries
-
 The simplest way to use SUS is to download and run the relay server from the project releases page.
 
 # Examples
-If you are using C++, you can follow the example files [here](/ws_server/src/) for creating a node with a libhv client. 
-
-move to the build directory or the directory containing the downloaded binaries and run
+Move to the build directory or the directory containing the downloaded binaries and run
 
 `./relay_server`
 
@@ -35,12 +30,12 @@ and client1 should print the message that it receives from client2
 
 `heard: {"ID":99,"message":"Hello Client1!"}`
 
-# Building from source
+If you are using C++, you can follow the example files [here](/ws_server/src/) for creating a node with a libhv client. 
 
+# Building from source
 Installation instructions for the dependency `libhv` – which was used to write the relay server and example clients – are included here.
 
 ## Dependency
-
 1. Download libhv: https://github.com/ithewei/libhv
 
 2. Install libhv:
