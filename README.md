@@ -15,17 +15,17 @@ The simplest way to use SUS is to download and run the relay server from the pro
 # Examples
 If you are using C++, you can follow the example files [here](/ws_server/src/) for creating a node with a libhv client. 
 
-in one thread run
+move to the build directory or the directory containing the downloaded binaries and run
 
-`./build/relay_server`
+`./relay_server`
 
-in another run
+as another process run
 
-`./build/client1`
+`./client1`
 
 and another run
 
-`./build/client2`
+`./client2`
 
 client2 should print the message that it receives from client1
 
