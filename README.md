@@ -69,3 +69,7 @@ and another run
 client2 should print the message that it receives from client1
 
 `heard: {"ID":200,"message":"Hello Client2!"}`
+
+and client1 should print the message that it receives from client2
+
+`heard: {"ID":99,"message":"Hello Client1!"}`
