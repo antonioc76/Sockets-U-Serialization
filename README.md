@@ -1,5 +1,5 @@
 # Sockets [U](https://en.wikipedia.org/wiki/Union_(set_theory)) Serialization (SUS)
-An implementation agnostic IPC system and specification based on WebSockets and JSON.
+An implementation agnostic IPC system and specification based on WebSockets and JSON, developed as the middleware for Sooner Competitive Robotics' STORM 2026 codebase.
 
 # Architecture
 The communication protocol is described by the following diagram
