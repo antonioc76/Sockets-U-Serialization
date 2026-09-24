@@ -12,6 +12,8 @@ The simplest way to use SUS is to download and run the relay server from the pro
 # Examples
 Move to the build directory or the directory containing the downloaded binaries and run
 
+`sudo chmod +x relay_server client1 client2` (1st time only)
+
 `./relay_server`
 
 as another process run
